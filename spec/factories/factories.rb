@@ -9,7 +9,7 @@ FactoryBot.define do
 
   factory :user do
     full_name { Faker::Zelda.character }
-    email     'foo@bar.com'
+    email     { "#{full_name}@hyrule.com" }
     password  'v0lders'
   end
 end
